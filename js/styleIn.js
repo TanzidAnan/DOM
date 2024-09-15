@@ -23,4 +23,6 @@ ul.appendChild(li);
 
 
 const li =document.getElementById('id');
-console.log(li)
+console.log(li);
+const card= document.createElement('li');
+console.log(card)
