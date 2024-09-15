@@ -23,8 +23,10 @@ ul.appendChild(li);
 
 
 // const li =document.getElementById('id');
-console.log(li);
+// console.log(li);
 const card= document.createElement('li');
-console.log(card)
+// console.log(card)
 const car =document.createElement('ul');
-console.log(car)
+// console.log(car)
+const ca =document.getElementById('cards');
+console.log(ca)
