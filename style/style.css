@@ -9,3 +9,9 @@ ul{
 #furate-title{
     color: rgb(238, 222, 0);
 }
+#place-container{
+    background-color: chocolate;
+}
+.large-text{
+    font-size: 2rem;
+}
