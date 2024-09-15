@@ -6,5 +6,7 @@ for(let furte of fourtItem){
     console.log(furte.innerText)
 }
 
-document.getElementById('fastTitle').style.backgroundColor = 'red'
+ const styleList =document.getElementById('fastTitle').style.backgroundColor = 'red';
+ styleList.setAttribute('title','tootle tibe ')
+
 console.log(fourtItem)
