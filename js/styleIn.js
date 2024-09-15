@@ -29,4 +29,4 @@ const card= document.createElement('li');
 const car =document.createElement('ul');
 // console.log(car)
 const ca =document.getElementById('cards');
-console.log(ca)
+console.log(ca.innerText)
