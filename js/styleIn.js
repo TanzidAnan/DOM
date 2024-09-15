@@ -29,4 +29,9 @@ const card= document.createElement('li');
 const car =document.createElement('ul');
 // console.log(car)
 const ca =document.getElementById('cards');
-console.log(ca.innerText)
+// console.log(ca.innerText)
+
+const add =document.getElementById("add");
+add.addEventListener('click',function(){
+    console.log(add)
+})
