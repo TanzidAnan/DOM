@@ -18,6 +18,7 @@ place.classList.remove('large-text');
 
 const ul =document.createElement('ul');
 const li = document.createElement('li')
-li.innerHTML='afkjhkjsfdh';
-ul.appendChild(li)
-console.log(li)
+li.innerText='afkj';
+ul.appendChild(li);
+
+
