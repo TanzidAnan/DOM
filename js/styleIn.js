@@ -22,3 +22,5 @@ li.innerText='afkj';
 ul.appendChild(li);
 
 
+const li =document.getElementById('id');
+console.log(li)
