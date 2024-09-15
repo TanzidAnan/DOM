@@ -34,4 +34,6 @@ const ca =document.getElementById('cards');
 const add =document.getElementById("add");
 add.addEventListener('click',function(){
     console.log(add)
+    console.log('adfasfda');
+    
 })
