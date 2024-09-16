@@ -15,6 +15,7 @@
             <li class="item">Lorem islkajlkjdsapsum dolor sit amet.</li>
             <li class="item">Loasdfasdfasamet.</li>
         </ul>
+        <button id="btn-add-item">Add</button>
     </section>
 
     <script>
@@ -27,6 +28,13 @@
                 event.target.parentNode.removeChild(event.target)
             })
         }
+        document.getElementById('btn-add-item').addEventListener('click',function(){
+            const listContainer =document.getElementById('list-container');
+
+            const li =document.createElement('li');
+            li.innerText ='Barend New item';
+            listContainer.appendChild(li)
+        })
     </script>
 </body>
 </html>
