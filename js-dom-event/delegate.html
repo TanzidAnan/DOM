@@ -19,20 +19,29 @@
     </section>
 
     <script>
-        const items =document.getElementsByClassName('item');
-        // console.log(items)
-        for(let item of items){
-            // console.log(item)
-            item.addEventListener('click',function(event){
-                console.log(event.target.parentNode)
-                event.target.parentNode.removeChild(event.target)
-            })
-        }
+        // const items =document.getElementsByClassName('item');
+        // // console.log(items)
+        // for(let item of items){
+        //     // console.log(item)
+        //     item.addEventListener('click',function(event){
+        //         console.log(event.target.parentNode)
+        //         event.target.parentNode.removeChild(event.target)
+        //     })
+        // }
+
+
+
+        document.getElementById('list-container').addEventListener('click',function(event){
+            event.target.parentNode.removeChild(event.target)
+        })
+
+
         document.getElementById('btn-add-item').addEventListener('click',function(){
             const listContainer =document.getElementById('list-container');
 
             const li =document.createElement('li');
             li.innerText ='Barend New item';
+            li.classList.add('item')
             listContainer.appendChild(li)
         })
     </script>
