@@ -9,7 +9,7 @@
 
 <body>
     <h1>Plice add your comment</h1>
-    <div>
+    <div id="comment-container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, consectetur. Odit perferendis suscipit
             quod maxime veritatis soluta autem atque, illo modi nobis, explicabo at iste id reprehenderit deserunt.
             Sint, temporibus?</p>
@@ -21,10 +21,23 @@
             Sint, temporibus?</p>
     </div>
     <div>
-        <textarea name="" id="" cols="100" rows="10"></textarea>
+        <textarea name="" id="new-comment" cols="100" rows="10"></textarea>
         <br>
-        <button>Post</button>
+        <button id="bnt-post">Post</button>
     </div>
+
+    <script>
+        document.getElementById('bnt-post').addEventListener('click',function(){
+            const commentBox =document.getElementById('new-comment');
+            const newComment =commentBox.value;
+
+            const commentContainer =document.getElementById('comment-container');
+            const p =document.createElement('p');
+            p.innerText =newComment;
+            commentContainer.appendChild(p);
+            commentBox.value =""
+        })
+    </script>
 </body>
 
 </html>
