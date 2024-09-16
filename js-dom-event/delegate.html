@@ -24,6 +24,7 @@
             // console.log(item)
             item.addEventListener('click',function(event){
                 console.log(event.target.parentNode)
+                event.target.parentNode.removeChild(event.target)
             })
         }
     </script>
