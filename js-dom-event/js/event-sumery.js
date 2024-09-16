@@ -11,3 +11,13 @@ const dataChace1 =document.getElementById('heandle-adds');
 dataChace.innerText ='ki data deaoa jai'
 dataChace1.innerText ='Tanzid anan marzan'
 })
+
+
+document.getElementById('addButton').addEventListener('click',function(){
+    // console.log(45454)
+    const inputTextData =document.getElementById('inputButton');
+    // console.log(inputTextData.value)
+    const defuleTextData =document.getElementById('hendle-text');
+    defuleTextData.innerText =inputTextData.value;
+    inputTextData.value = "";
+ })
