@@ -13,8 +13,10 @@
     <script>
         document.getElementById('delete-conferment').addEventListener('keyup',function(events){
             const text =events.target.value;
+            
             // console.log(text)
             const deleteButton= document.getElementById('btn-delete');
+            
             if(text === 'Delete'){
                 deleteButton.removeAttribute('disabled',false)
             }
@@ -22,7 +24,8 @@
                 deleteButton.setAttribute('disabled',true)
             }
         })
-        document.getElementById('btn-delete').addEventListener('click',function(){
+        const deleteButtons= document.getElementById('btn-delete').addEventListener('click',function(){
+          const button=  document.getElementById('btn-delete');
            const deleteInfo= document.getElementById('secret-info');
            deleteInfo.style.color ='red'
            deleteInfo.style.display ='none'
