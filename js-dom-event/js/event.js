@@ -17,3 +17,8 @@ makeButton.addEventListener('click', makepink)
 function makepink() {
     document.body.style.backgroundColor = 'pink'
 }
+
+const makeBrown = document.getElementById('make-brown');
+makeBrown.addEventListener('click', function () {
+    document.body.style.backgroundColor = 'brown'
+})
