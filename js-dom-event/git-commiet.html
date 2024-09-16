@@ -16,7 +16,7 @@
             // console.log(text)
             const deleteButton= document.getElementById('btn-delete');
             if(text === 'Delete'){
-                deleteButton.removeAttribute('disabled')
+                deleteButton.removeAttribute('disabled',false)
             }
             else{
                 deleteButton.setAttribute('disabled',true)
@@ -24,6 +24,7 @@
         })
         document.getElementById('btn-delete').addEventListener('click',function(){
            const deleteInfo= document.getElementById('secret-info');
+           deleteInfo.style.color ='red'
            deleteInfo.style.display ='none'
         })
     </script>
