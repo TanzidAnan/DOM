@@ -6,15 +6,30 @@
     <title>js dom summary</title>
 </head>
 <body>
-    <h4 id="heandle-adds">Defult Text</h4>
-    <button onclick="hendleCard()">hendle add to onley funcation</button>
 
+
+    <h1>DOM</h1>
+    <h3 id="hendle-text">Defult text Input</h3>
+    <input id="inputButton" type="text">
+    <button id="addButton">Add click</button>
+
+
+
+    <!-- <h4 id="heandle-adds">Defult Text</h4>
+    <button onclick="hendleCard()">hendle add to onley funcation</button>
+    <h2 id="data-chance">Data Chance</h2>
+    <button id="add-event-liseaner">Handle event by addEventListense</button> -->
+
+
+    <script src="js/event-sumery.js"></script>
     <script>
-        function hendleCard(){
-            console.log('button click');
-            const heandleChance =document.getElementById('heandle-adds');
-            heandleChance.innerText ='Tanzid anan marzan'
-        }
+     document.getElementById('addButton').addEventListener('click',function(){
+        // console.log(45454)
+        const inputTextData =document.getElementById('inputButton');
+        // console.log(inputTextData.value)
+        const defuleTextData =document.getElementById('hendle-text');
+        defuleTextData.innerText =inputTextData.value;
+     })
     </script>
 </body>
 </html>
