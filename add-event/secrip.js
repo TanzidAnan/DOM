@@ -1,6 +1,6 @@
-let sum =0
+let sum =0;
+const fastElement =document.getElementById('count');
 function clickMe(){
-    const fastElement =document.getElementById('count');
     sum += 1
     if(sum>=0){
         fastElement.innerText =sum
@@ -8,7 +8,6 @@ function clickMe(){
 }
 
 document.getElementById('odd-btn').addEventListener('click',function(){
-    const fastElement =document.getElementById('count');
     sum-=1;
     if(sum >=0){
         fastElement.innerText =sum
