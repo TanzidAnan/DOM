@@ -1,6 +1,9 @@
 let setCount =1
 document.getElementById('submit-btn').addEventListener('click',function(){
     const inputFild = document.getElementById('text-area').value;
+    if(inputFild === undefined){
+        console.log(5545)
+    }
     const reviwInput =document.getElementById('reviw');
     if(reviwInput === undefined){
         console.log(5454)
