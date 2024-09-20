@@ -6,7 +6,8 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     // console.log(addMoney,'Add money',inputPinNumber);
 
     if(inputPinNumber === 1111){
-        document.getElementById('inputNumber')
+      const  name=  document.getElementById('inputNumber');
+      console.log(name)
     }
     else{
         alert('Falid to pin and number')
