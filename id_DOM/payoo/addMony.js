@@ -9,6 +9,8 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
       const  name=  document.getElementById('inputNumber');
       alert("name")
       alert("Tanzid anan")
+      alert("Tanzid anan")
+      decodeURI
       console.log(typeof name)
     }
     else{
