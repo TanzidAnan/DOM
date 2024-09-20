@@ -7,7 +7,7 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 
     if(inputPinNumber === 1111){
       const  name=  document.getElementById('inputNumber');
-      console.log(name)
+      console.log(typeof name)
     }
     else{
         alert('Falid to pin and number')
