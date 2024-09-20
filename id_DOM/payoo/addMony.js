@@ -8,6 +8,7 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     if(inputPinNumber === 1111){
       const  name=  document.getElementById('inputNumber');
       alert("name")
+      alert("Tanzid anan")
       console.log(typeof name)
     }
     else{
