@@ -6,12 +6,10 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     // console.log(addMoney,'Add money',inputPinNumber);
 
     if(inputPinNumber === 1111){
-      const  name=  document.getElementById('inputNumber');
-      alert("name")
-      alert("Tanzid anan")
-      alert("Tanzid anan")
-      decodeURI
-      console.log(typeof name)
+      const blance =getTextFieldValueById('carrent-blance');
+      const newBlance =blance + addMoney;
+      document.getElementById('carrent-blance').innerText =newBlance;
+      console.log(blance)
     }
     else{
         alert('Falid to pin and number')
