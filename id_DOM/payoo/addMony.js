@@ -5,6 +5,11 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     const inputPinNumber =getIuputFildValueById('input-pin-number');
     // console.log(addMoney,'Add money',inputPinNumber);
 
+    if(isNaN(addMoney)){
+      alert('Not a Number')
+      return;
+    }
+
     if(inputPinNumber === 1111){
       const blance =getTextFieldValueById('carrent-blance');
       const newBlance =blance + addMoney;

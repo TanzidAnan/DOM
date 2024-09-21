@@ -5,8 +5,17 @@ document.getElementById('btn-cash-out').addEventListener('click', function (even
   const inputPinNumber = getIuputFildValueById('input-cash-out-pin');
   // console.log(cashOut,'Add money',inputPinNumber);
 
+  if(isNaN(cashOut)){
+    alert('Not a Number');
+    return;
+  }
+
   if (inputPinNumber === 1111) {
     const blance = getTextFieldValueById('carrent-blance');
+    if(cashOut>blance){
+      alert('Money...');
+      return;
+    }
     const newBlance = blance - cashOut;
     document.getElementById('carrent-blance').innerText = newBlance;
 
