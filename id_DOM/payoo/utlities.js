@@ -12,5 +12,9 @@ function getTextFieldValueById(id){
 
 
 function showScetionById(id){
-    
+    document.getElementById('add-mony-form').classList.add('hidden');
+    document.getElementById('cash-out-form').classList.add('hidden');
+    document.getElementById('tersation-section').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden')
 }
