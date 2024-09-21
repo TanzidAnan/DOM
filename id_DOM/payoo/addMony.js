@@ -12,6 +12,8 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 
       const p =document.createElement('p');
       p.innerText=`Added ${addMoney} tk. Blance ${newBlance}`
+      // p.classList.add('bg-red-300');
+      p.classList.add('mt-4')
       console.log(p);
       document.getElementById('tersation-section').appendChild(p)
 
