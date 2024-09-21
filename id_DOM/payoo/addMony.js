@@ -12,7 +12,8 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 
       const p =document.createElement('p');
       p.innerText=`Added ${addMoney} tk. Blance ${newBlance}`
-      console.log(p)
+      console.log(p);
+      document.getElementById('tersation-section').appendChild(p)
 
     }
     else{
