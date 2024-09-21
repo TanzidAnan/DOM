@@ -9,7 +9,11 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
       const blance =getTextFieldValueById('carrent-blance');
       const newBlance =blance + addMoney;
       document.getElementById('carrent-blance').innerText =newBlance;
-      console.log(blance)
+
+      const p =document.createElement('p');
+      p.innerText=`Added ${addMoney} tk. Blance ${newBlance}`
+      console.log(p)
+
     }
     else{
         alert('Falid to pin and number')
