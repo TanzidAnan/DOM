@@ -1,3 +1,6 @@
+document.getElementById('log-out').addEventListener('click', function () {
+  window.location.href = '/index.html'
+})
 document.getElementById('btn-cash-out').addEventListener('click', function (event) {
   event.preventDefault();
 
